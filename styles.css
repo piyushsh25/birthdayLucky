@@ -1,0 +1,26 @@
+:root{
+    --primary-green:chartreuse;
+    --primary-light:blanchedalmond
+}
+body{
+    background-color: black;
+    color: var(--primary-green);
+    text-align: center;
+}
+
+#btn-result{
+    height: 50px;
+    border-radius: 20px;
+    border-color: var(--primary-light);
+}
+#outputText{
+    color: black;
+    height: 10vh;
+     width: 40%;
+     padding:2rem;
+     background-color: var(--primary-light);
+     margin:2rem auto;
+
+}
+
+
