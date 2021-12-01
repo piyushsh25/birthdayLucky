@@ -23,12 +23,16 @@ const displayOutput = (message) => {
   };
 
 function compareValues(sum,luckyNumber){
+    const date=dateOfBirth.value;
+    if(luckyNumber && date){
     if(sum % luckyNumber.value===0){
         displayOutput("Lucky!");
     }else{
         displayOutput("Not lucky, You make your own luck ");
     }
-
+}else{
+    displayOutput("Please fill both input");
+}
 }
 
 
