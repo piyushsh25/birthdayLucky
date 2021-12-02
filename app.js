@@ -24,7 +24,7 @@ const displayOutput = (message) => {
 
 function compareValues(sum,luckyNumber){
     const date=dateOfBirth.value;
-    if(luckyNumber>0 && date){
+    if(luckyNumber.value>0){
     if(sum % luckyNumber.value===0){
         displayOutput("Lucky!");
     }else{
