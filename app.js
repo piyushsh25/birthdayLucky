@@ -3,7 +3,7 @@ const luckyNumber= document.querySelector("#lucky-number");
 const submitButton=document.querySelector("#btn-result");
 const outputText=document.querySelector("#outputText");
 
-function calculateSum(dob){
+const calculateSum=(dob)=>{
     dob=dob.replaceAll("-","");
     let sum=0;
     for(let i=0;i<dob.length;i++){
@@ -12,7 +12,7 @@ function calculateSum(dob){
     return sum;
     }
 
-function checkBirthdayIsLucky(){
+const checkBirthdayIsLucky=()=>{
     const dob =dateOfBirth.value;
     const sum = calculateSum(dob);
     compareValues(sum,luckyNumber);
